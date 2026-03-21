@@ -1,0 +1,10 @@
+name = "r2-file-vault"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "YOUR_BUCKET_NAME"   # replace with your R2 bucket name
+
+# Create the bucket first:  wrangler r2 bucket create YOUR_BUCKET_NAME
+# Then set AUTH_ANSWER_1 and AUTH_ANSWER_2 in Cloudflare Pages → Settings → Environment variables

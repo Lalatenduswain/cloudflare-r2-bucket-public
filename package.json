@@ -1,0 +1,25 @@
+{
+  "name": "r2-file-vault",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev --compatibility-date=2024-09-23 -- vite",
+    "build": "vite build",
+    "preview": "wrangler pages dev ./dist",
+    "deploy": "vite build && wrangler pages deploy dist --project-name=r2-file-vault"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240329.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
+  }
+}
